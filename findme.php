@@ -8,6 +8,9 @@
 </form>
 
 <?php
+$wbapifile = 'weatherbug_api_key.txt';
+$wbapikey = file_get_contents($wbapifile);
+
 // Replace the variable values below
 // with your specific database information.
 $host = "finder.onsitecomputerconsulting.net";

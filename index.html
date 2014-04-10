@@ -1,5 +1,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
+<?
+
+
+// Replace the variable values below
+// with your specific database information.
+$host = "finder.onsitecomputerconsulting.net";
+$user = "chopsuei3";
+$pass = "jTRV9k";
+$db   = "finder_oscc";
+
+// This part sets up the connection to the 
+// database (so you don't need to reopen the connection
+// again on the same page).
+$ms = mysql_pconnect($host, $user, $pass);
+if ( !$ms )
+        {
+        echo "error connecting to database.\n";
+        }
+
+// Then you need to make sure the database you want
+// is selected.
+mysql_select_db($db);
+
+$userip = getenv(REMOTE_ADDR);
+
+echo $userip;
+
+$visitor_insert = "INSERT INTO visitors (visitor_ip) values ('INET_ATON('$userip')')";
+
+$run = mysql_query($visitor_insert);
+
+?>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- TemplateBeginEditable name="doctitle" -->
@@ -24,24 +58,24 @@ body {
     <h1><img src="logo.jpg" width="530" height="100" align="middle" /></h1>
     <table width="80%" border="0" align="center" cellpadding="5" bgcolor="#0066cc" >
       <tr>
-        <td bgcolor="#0066cc"><div align="center">
-          <h4><strong>Home</strong></h4>
+        <td valign="middle" bgcolor="#0066cc"><div align="center">
+          <h4><a href="index.html"><strong>Home</strong></a></h4>
         </div></td>
-        <td bgcolor="#0066cc"><div align="center">
-          <h4><strong>Remote Support</strong></h4>
+        <td valign="middle" bgcolor="#0066cc"><div align="center">
+          <h4><a href="index.html"><strong>Remote Support</strong></a></h4>
         </div></td>
-        <td bgcolor="#0066cc"><div align="center">
-          <h4><strong>Tools</strong></h4>
+        <td valign="middle" bgcolor="#0066cc"><div align="center">
+          <h4><a href="index.html"><strong>Tools</strong></a></h4>
         </div></td>
-        <td bgcolor="#0066cc"><div align="center">
-          <h4><strong>Recipes</strong></h4>
+        <td valign="middle" bgcolor="#0066cc"><div align="center">
+          <h4><a href="recipes.html"><strong>Recipes</strong></a></h4>
         </div></td>
       </tr>
     </table>
     </div>
     </div>
     <p>&nbsp;</p>
-    <h1>    Home and Small Office Technical Support</h1>
+    <h1>Home and Small Office Technical Support</h1>
 <p>We provide on-site computer repair services to homes and businesses.  We specialize in PC virus removal, system optimization, and technical problem solving and troubleshooting for complex issues faced in today's technical world.  <strong>We can solve almost any problem you've been told is unfixable or is too expensive, from spyware and viruses to hard drive data recovery.</strong></p>
 	<p>Services include:
     <ul><li>hardware upgrades and repairs</li>
@@ -52,16 +86,17 @@ body {
     <li>wireless internet problems and other general performance issues</li></ul></p>
 	<p></p>
     <h2>Contact Information</h2>
-<p>Information, quotes, and appointments available via e-mail or phone<br/>Kyle P. Schien | <a href="mailto:kyleps@onsitecomputerconsulting.net">kyleps@onsitecomputerconsulting.net</a> | 415.608.7615<br/>
-70 Garden Rock Road, San Anselmo, California  94960</p>
-<p>&nbsp;</p>
+<p>Information, quotes, and appointments available via e-mail or phone<br/>Kyle P. Schien | 415.608.7615<br/> 
+149 Clark Street, San Rafael, CA  94960
+</p>
+<p><a href="mailto:kyleps@onsitecomputerconsulting.net">kyleps@onsitecomputerconsulting.net</a></p>
 <div align="center">
   <table width="374" border="0" cellpadding="10">
     <tr>
-      <td><div align="center"><img src="googleplus_logo.png" width="32" height="32" alt="Google Plus" longdesc="http://plus.google.com/115142100571174499447" /></div></td>
-      <td><div align="center"><img src="github_logo.png" width="101" height="33" alt="GitHub logo" longdesc="http://github.com/chopsuei3" /></div></td>
+      <td><div align="center"><a href="http://plus.google.com/115142100571174499447"><img src="googleplus_logo.png" width="32" height="32" alt="Google Plus" /></a></div></td>
+      <td><a href="http://github.com/chopsuei3"><div align="center"><img src="github_logo.png" width="101" height="33" alt="GitHub logo" /></div></td>
       <td><div align="center"><a href="http://www.linkedin.com/pub/kyle-schien/5/997/868"><img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Kyle Schien's profile on LinkedIn" /></a></div></td>
-      <td><div align="center"><img src="facebook_logo.png" width="114" height="29" alt="Facebook logo" longdesc="http://www.facebook.com/chopsuei3" /></div></td>
+      <td><div align="center"><a href="http://www.facebook.com/chopsuei3"><img src="facebook_logo.png" width="114" height="29" alt="Facebook logo" /></a></div></td>
       <td><a href="http://www.dreamhost.com/r.cgi?658910"><img src="dreamhost.gif" width="125" height"31" alt="DreamHost Hosting" /></a></td>
       </tr>
   </table>
