@@ -1,0 +1,84 @@
+body {
+  background: url('../images/background.png') left top repeat;
+  font-family: "Helvetica Neue", Helvetica-Neue, Helvetica, Arial, sans-serif;
+}
+
+#toolbar {
+  background: url('../images/toolbar-bg_small.png') left top repeat-x;
+  font-size: 20px;
+  line-height: 41px;
+  color: #fff;
+  height: 41px;
+}
+#toolbar.title {
+  text-align: center;
+}
+
+#content {
+  background: url('../images/bg-gradient.png') left top repeat-x;
+  min-height: 150px;
+}
+
+
+.scores {
+  text-align: center;
+  position: relative;
+}
+.scores .onhole {
+  /*border: 1px solid yellow;*/
+  color: #ddd;
+  display: inline-block;
+  font-size: 300px;
+  margin-top: -20px;
+  margin-left: -40px;
+  letter-spacing: -40px;
+}
+.scores .total {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+}
+
+
+#content .bottom-toolbar {
+  bottom: 20px;
+  position: absolute;
+  width: 99%;
+}
+
+.actions {
+  margin: 0 auto;
+  width: 276px;
+}
+.actions li a {
+  background-image: url('../images/buttons_small.png');
+  color: #DF442B;
+  display: block;
+  float: left;
+  font-size: 24px;
+  /*font-weight: 200;*/
+  height: 58px;
+  width: 138px;
+  line-height: 57px;
+  text-align: center;
+  text-decoration: none;
+}
+.actions a.left-button {
+  background-position: 1px 0px;
+}
+.actions a.left-button:hover {
+  background-position: 1px -57px;
+}
+.actions a.left-button:active {
+  background-position: 1px -115px;
+}
+
+.actions a.right-button {
+  background-position: 139px 0px;
+}
+.actions a.right-button:hover {
+  background-position: 139px -57px;
+}
+.actions a.right-button:active {
+  background-position: 139px -115px;
+}

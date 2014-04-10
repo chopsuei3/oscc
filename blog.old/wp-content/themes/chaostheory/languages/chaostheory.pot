@@ -1,0 +1,286 @@
+# Copyright (C) 2012 Automattic
+# This file is distributed under the GNU General Public License.
+msgid ""
+msgstr ""
+"Project-Id-Version: ChaosTheory 1.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/chaostheory\n"
+"POT-Creation-Date: 2012-11-05 23:00:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:11
+msgid "Not Found"
+msgstr ""
+
+#: 404.php:13
+msgid ""
+"Apologies, but we were unable to find what you were looking for. Perhaps the "
+"search box will help."
+msgstr ""
+
+#: 404.php:19 inc/widgets.php:16 sidebar.php:42
+msgid "Find &raquo;"
+msgstr ""
+
+#: archive.php:12
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:14
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:16
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:18 author.php:11
+msgid "Author Archives: %s"
+msgstr ""
+
+#: archive.php:20
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: archive.php:22 sidebar.php:25
+msgid "Archives"
+msgstr ""
+
+#: archive.php:28 archive.php:53 author.php:15 author.php:40 category.php:14
+#: category.php:39 index.php:35 search.php:16 search.php:42
+msgid "&laquo; Older posts"
+msgstr ""
+
+#: archive.php:29 archive.php:54 author.php:16 author.php:41 category.php:15
+#: category.php:40 index.php:36 search.php:17 search.php:43
+msgid "Newer posts &raquo;"
+msgstr ""
+
+#: archive.php:36 author.php:23 category.php:22 inc/jetpack.compat.php:33
+#: index.php:15 page.php:15 search.php:24
+msgid "Permanent link to %s"
+msgstr ""
+
+#: archive.php:38 author.php:25 category.php:24 inc/jetpack.compat.php:35
+#: index.php:17 search.php:26 single.php:17
+msgid "%1$s &#8211; %2$s"
+msgstr ""
+
+#: archive.php:39 author.php:26 category.php:25 inc/jetpack.compat.php:36
+#: index.php:18 search.php:27 single.php:18
+msgid "Posted in %s"
+msgstr ""
+
+#: archive.php:40 author.php:27 category.php:26 inc/jetpack.compat.php:37
+#: index.php:19 search.php:28 single.php:19
+msgid "Tagged"
+msgstr ""
+
+#: archive.php:41 author.php:28 category.php:27 inc/jetpack.compat.php:38
+#: index.php:20 search.php:29 single.php:20
+msgid "Edit"
+msgstr ""
+
+#: archive.php:42 author.php:29 category.php:28 inc/jetpack.compat.php:39
+#: index.php:21 search.php:30
+msgid "Leave a Comment"
+msgstr ""
+
+#: archive.php:42 author.php:29 category.php:28 inc/jetpack.compat.php:39
+#: index.php:21 search.php:30
+msgid "Comments (1)"
+msgstr ""
+
+#: archive.php:42 author.php:29 category.php:28 inc/jetpack.compat.php:39
+#: index.php:21 search.php:30
+msgid "Comments (%)"
+msgstr ""
+
+#: archive.php:46 author.php:33 category.php:32 inc/jetpack.compat.php:43
+#: index.php:25 search.php:34 single.php:24
+msgid "Read More &raquo;"
+msgstr ""
+
+#: archives.php:21
+msgid "Archives by Category"
+msgstr ""
+
+#: archives.php:27
+msgid "Archives by Month"
+msgstr ""
+
+#: archives.php:32 page.php:20
+msgid "Edit this entry."
+msgstr ""
+
+#: category.php:10
+msgid "Category Archives:"
+msgstr ""
+
+#: comments.php:13
+msgid "This post is password protected. Enter the password to proceed."
+msgstr ""
+
+#: comments.php:31
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:51
+msgid "One Trackback/Pingback"
+msgid_plural "%1$s Trackbacks/Pingbacks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: footer.php:7
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:26
+msgid "Primary Navigation"
+msgstr ""
+
+#: functions.php:46 inc/widgets.php:8 sidebar.php:38
+msgid "Search"
+msgstr ""
+
+#: functions.php:47 inc/widgets.php:29 sidebar.php:57
+msgid "Meta"
+msgstr ""
+
+#: functions.php:48
+msgid "Links"
+msgstr ""
+
+#: functions.php:49
+msgid "Home Link"
+msgstr ""
+
+#: functions.php:50 inc/widgets.php:85
+msgid "RSS Links"
+msgstr ""
+
+#: functions.php:74
+msgid ""
+"<li>Posted %1$s at %2$s</li> <li><a href=\"%3$s\" title=\"Permalink to this "
+"comment\">Permalink</a></li>"
+msgstr ""
+
+#: functions.php:78 functions.php:100
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:81
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:95
+msgid "By %1$s on %2$s at %3$s"
+msgstr ""
+
+#: functions.php:103
+msgid "<em>Your trackback/pingback is awaiting moderation.</em>"
+msgstr ""
+
+#: header.php:50
+msgid "Skip navigation to the content"
+msgstr ""
+
+#: header.php:50
+msgid "Skip navigation"
+msgstr ""
+
+#: inc/jetpack.compat.php:44 index.php:26 page.php:19 single.php:25
+msgid "Pages: "
+msgstr ""
+
+#: inc/widgets.php:47 sidebar.php:13
+msgid "&laquo; Home"
+msgstr ""
+
+#: inc/widgets.php:69
+msgid "Adds a link to the home page on every page <em>except</em> the home."
+msgstr ""
+
+#: inc/widgets.php:72
+msgid "Link Text:"
+msgstr ""
+
+#: inc/widgets.php:90 sidebar.php:52
+msgid "All posts"
+msgstr ""
+
+#: inc/widgets.php:91 sidebar.php:53
+msgid "All comments"
+msgstr ""
+
+#: inc/widgets.php:111
+msgid "Title:"
+msgstr ""
+
+#: search.php:13
+msgid "Search Results for:"
+msgstr ""
+
+#: search.php:49
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:51
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: search.php:57
+msgid "Search &raquo;"
+msgstr ""
+
+#: sidebar.php:16
+msgid "Pages"
+msgstr ""
+
+#: sidebar.php:19
+msgid "Categories"
+msgstr ""
+
+#: sidebar.php:50
+msgid "RSS Feeds"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "ChaosTheory"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wordpress.org/extend/themes/chaostheory"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A dark single-column theme with a minimal, techy feel."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://automattic.com/"
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid ""
+"black, dark, one-column, fixed-width, sticky-post, blue, custom-menu, rtl-"
+"language-support, translation-ready, custom-background, custom-header, "
+"featured-images, featured-image-header, blog, portfolio, clean, dark, "
+"minimal, tech, custom-colors"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Archives Page"
+msgstr ""

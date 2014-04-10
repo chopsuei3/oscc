@@ -1,0 +1,48 @@
+<h2>Topics to improve knowledge on</h2>
+<ul><li>Subnet masks</li>
+<li>IPv6</li>
+<li>DNS</li>
+<li>Apache security</li></ul>
+
+<h2>list git tags by date</h2>
+<p>git for-each-ref --format '%(refname) %(taggerdate)' refs/tags</p>
+
+<h2>Data recovery tools</h2>
+<ul><li><a href="http://www.cgsecurity.org/wiki/TestDisk">TestDisk</a><a href="http://www.oscc.biz/tools/testdisk-6.8.zip">[dl]</a></li>
+<li><a href="http://www.grc.com/sr/spinrite.htm">Spinrite</a><a href="http://www.oscc.biz/tools/spinrite.iso">[dl]</a></li>
+<li><a href="http://www.gnu.org/software/ddrescue/ddrescue.html">ddrescue (Linux)</a><a href="http://ftpmirror.gnu.org/ddrescue/">[dl]</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Badblocks">badblocks(Linux)</a></li>
+<li>chkdsk</li></ul>
+
+
+<h2>Repairing Windows Vista/7 Boot sector</h2>
+<p>Boot into Windows Recovery mode</br>
+bcdedit /export C:\BCD_Backup</br>
+c:</br>
+cd boot</br>
+attrib bcd -s -h -r</br>
+ren c:\boot\bcd bcd.old</br>
+bootrec /RebuildBcd</br>
+</p>
+
+<h2>Importing Outlook 2010 Mail account settings from one copy of Office 2010, to another copy of Office</h2>
+<p>To move your accounts, do this:</p>
+<ol>
+<li>start - run - regedit</li>
+<li>search for: HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles\Outlook and export it</li>
+<li>After you import it on to the new PC, you will have the enter the passwords for those e-mail accounts</li>
+</ol>
+
+<h2>Piwik Analytics tips</h2>
+<p>Filter visitor log by IP address<br/>
+Add segment=visitIp==a.b.c.d</p>
+
+
+<h2> Add Ubuntu user and add to sudoers file </h2>
+<ol>
+<li>adduser (username)</li>
+<li>sudo adduser (username) sudo</li>
+</ol>
+
+
+<h5>More notes</h5>

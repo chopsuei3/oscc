@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Installing an SSH Server on Windows XP/2003</title>
+</head>
+
+<body>
+<h1>How to install an SSH Server on Windows XP/Server 2003</h1>
+
+<ol>
+  <li>Download and install Cygwin</li>
+  <ol type='a'>
+    <li>Run <a href="http://www.cygwin.com/setup.exe" target="_blank">setup.exe</a></li>
+    <li>Select &ldquo;Install from Internet&rdquo;</li>
+    <li>Set the root directory to c:\cygwin and &ldquo;Install  for All Users&rdquo;</li>
+    <li>Set the &ldquo;Local package directory&rdquo; to c:\cygwin</li>
+    <li>Select required packages (openssh) <br />
+    In the  packages selection window, click &ldquo;View&rdquo; to see the Full view <br />
+    Find &ldquo;openssh&rdquo; on  the list, and click on &ldquo;Skip&rdquo; to set the package to install</li>
+    <li>Finish installation</li>
+    <li>Add c:\cygwin\bin to the PATH environment  variable <br />
+    <em>set path=%path%;c:\cygwin\bin</em></li>
+  </ol>
+  <li>Resolve  Windows permission issues <br />
+  Open Cygwin and run the following commands: <br />
+  <em>chmod +r /etc/passwd <br />
+  chmod u+w /etc/passwd <br />
+  chmod  +r  /etc/group <br />
+  chmod u+w /etc/group <br />
+  chmod  755   /var <br />
+  touch /var/log/sshd.log <br />
+  chmod 664 /var/log/sshd.log</em></li>
+  <li>Set up SSH server and host keys</li>
+  <ol type='a'>
+    <li>Open Cygwin and run the following command: <br />
+    <em>ssh-host-config</em></li>
+    <li>Let the script run, when prompted, &ldquo;Use  Privilege Separation&rdquo; by entering &ldquo;Yes&rdquo;</li>
+    <li>Enter &ldquo;Yes&rdquo; to create the &ldquo;sshd&rdquo; account</li>
+    <li>Enter &ldquo;Yes&rdquo; to &ldquo;Install as a service&rdquo; <br />
+    Enter a  value for the CYGWIN daemon – e.g. &ldquo;SSHD Server&rdquo;</li>
+    <li>Enter &ldquo;Yes&rdquo; to &ldquo;Use a different name&rdquo; and enter  (and re-enter): <em><br />
+    sshd</em></li>
+    <li>Set the password for the &ldquo;sshd&rdquo; account</li>
+  </ol>
+  <li>Resolve remaining &ldquo;sshd&rdquo; user account issues</li>
+  <ol type='a'>
+    <li>Open Cygwin and run the following commands: <br />
+    <em>editrights -a SeTcbPrivilege -u sshd <br />
+    editrights  -a SeAssignPrimaryTokenPrivilege -u sshd <br />
+    editrights -a SeCreateTokenPrivilege  -u sshd <br />
+    editrights -a SeDenyInteractiveLogonRight -u sshd <br />
+    editrights -a  SeDenyNetworkLogonRight -u sshd <br />
+    editrights –a SeDenyRemoteInteractiveLogonRight  -u sshd <br />
+    editrights -a SeIncreaseQuotaPrivilege -u sshd <br />
+    editrights -a  SeServiceLogonRight -u sshd</em></li>
+    <li>Enable &ldquo;sshd&rdquo; user account and set the &ldquo;Password  to never expire&rdquo; from &lsquo;lusrmgr.msc&rsquo;</li>
+    <li>Reset the password on the &ldquo;sshd&rdquo; account (Make  sure it is 5 to 8 characters)</li>
+    <li>Add user &ldquo;sshd&rdquo; to the &ldquo;Administrators&rdquo; group</li>
+    <li>From services.msc, go to the &ldquo;Log on&rdquo; tab, and  re-enter the password for user &ldquo;sshd&rdquo; <br />
+    At this point, you will gain an  additional privilege which is necessary to run the service</li>
+  </ol>
+  <li>Start the SSH Server <br />
+  From Cygwin, run: <em><br />
+  net start sshd</em></li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

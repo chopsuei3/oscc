@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Reset Body Property */
+/*body{border:0; margin:0; padding:0;}*/
+#navbar-container{background:#000000;}
+#int-site-container{
+/* default background colour, for all layout engines that don't implement gradients */
+background: #006600;
+
+/* gecko based browsers */
+background: -moz-linear-gradient(top, #006600, #00cc00);
+
+/* webkit based browsers */
+background: -webkit-gradient(linear, left top, left bottom, from(#006600), to(#00cc00));
+
+margin:0px 0px; padding:0px;
+text-align:center;
+color: #ffffff; /* text colour (black) */
+height: auto; /* gradient uses the full height of the element */
+padding: 5px; /* distance from border edge to text */
+}
+#logo, #navbar, #int-site{
+width:800px;
+margin:0 auto;
+}
+/*------------------*/
+/* LOGO */
+#logo{height:54px;}
+
+/*------------------*/
+/* Nav Bar */
+#navbar{
+height:26px;
+line-height:26px;
+}
+#navbar a:link, #navbar a:visited, #navbar a:hover{
+color:#FFFFFF;
+font-weight:bold;
+margin-right:20px;
+text-decoration:none;
+text-align:center;
+}
+
+#css-grd {
+/* default background colour, for all layout engines that don't implement gradients */
+background: #006600;
+
+/* gecko based browsers */
+background: -moz-linear-gradient(top, #006600, #00cc00);
+
+/* webkit based browsers */
+background: -webkit-gradient(linear, left top, left bottom, from(#006600), to(#00cc00));
+
+margin:50px 0px; padding:0px;
+text-align:center;
+color: #ffffff; /* text colour (black) */
+height: auto; /* gradient uses the full height of the element */
+padding: 5px; /* distance from border edge to text */
+}
+
+table{
+border : none;
+width : 650px;
+margin:auto;
+}
+
+th{
+margin:50px 0px; padding:0px;
+text-align:center;
+color: #ffffff; /* text colour (black) */
+}
+
+td{
+margin:50px 0px; padding:0px;
+text-align:center;
+color: #ffffff; /* text colour (black) */
+}

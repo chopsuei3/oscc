@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>frolfPARTY!</title>
+
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  
+  <style>
+    article, aside, details, figcaption, figure, footer, header,
+    hgroup, menu, nav, section { display: block; }
+  </style>
+  
+  <!-- Global Reset -->
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="handheld, all" />
+  <link rel="stylesheet" href="css/base.css" type="text/css" media="handheld, all" />
+  
+  <!-- Conditional stylesheets for iphone/webos -->
+  <link rel="stylesheet" href="_css/mobile-small.css" media="screen and (device-width:320px)" />
+  
+</head>
+<body>
+  <section id="toolbar" class="title">
+    <span>frolfParty!</span>
+  </section>
+  <section id="content">
+    <div class="scores">
+      <span id="holescore" class="onhole">0</span>
+      <span id="totalscore" class="total">0</span>
+    </div>
+    
+    <div class="bottom-toolbar">
+      <ul class="actions">
+        <li><a href="#" id="add-stroke" class="left-button">+ Stroke</a></li>
+        <li><a href="#" id="finish-hole" class="right-button">Hole In</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <script src="javascript/base.min.js"></script>
+  <script src="javascript/frolfparty.js"></script>
+</body>
+</html>
